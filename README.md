@@ -6,4 +6,5 @@ Estatísticas do meu [usuário](https://www.urionlinejudge.com.br/judge/pt/users
 **C**,
 **C++**,
 **Java**,
-**Python**.
+**Python**,
+**SQL**.
