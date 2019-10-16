@@ -11,6 +11,7 @@ public class Main {
 
         System.out.printf("A=%.4f\n", a);
     }
+    
 
     public static double area(double r) {
         final double PI = 3.14150;
