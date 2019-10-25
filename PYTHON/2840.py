@@ -4,6 +4,6 @@ def areabalao(r,pi):
 r, litros = map(int,input().split())
 
 quantidade = 0
-quantidade = litros // areabalao(r, 3.14159)
+quantidade = litros // areabalao(r, 3.1415)
 
 print(int(quantidade))
