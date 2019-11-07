@@ -1,3 +1,10 @@
+/*
+    Como estamos compilando usando uma lib com nossas funções temos que linka-las
+    
+    gcc 1015.c -lm 
+    ./a.out
+*/
+
 #include <stdio.h>
 #include <math.h>
 
@@ -14,7 +21,7 @@ double distancia(struct ponto a, struct ponto b)
     x = b.x - a.x;
     y = b.y - a.y;
 
-    x = pow(x, 2);
+    x = pow(x, 2);// por vincularmos um lib externa a nossa precisamos linkar elas
     y = pow(y, 2);
 
     res = x + y;
