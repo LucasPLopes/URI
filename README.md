@@ -3,8 +3,19 @@ Repositório com soluções de problemas de programação, competitive programmi
 ## Perfil
 Estatísticas do meu [usuário](https://www.urionlinejudge.com.br/judge/pt/users/statistics/155834) com dados de submissões por linguagem , solucionadas, ranking.
 ### Linguagens
-**C**,
-**C++**,
-**Java**,
-**Python**,
-**SQL**.
+
+**C**
+
+**C++**
+
+**Haskell**
+
+**Java**
+
+**Kotlin**
+
+**Python**
+
+**SQL**
+
+
