@@ -1,10 +1,29 @@
 #include <stdio.h>
+#include <math.h>
 
-int main() {
-double pi=3.14159, r,A=0;
-scanf("%lf",&r);
-A= r*r*pi;
-printf("A=%.4lf\n",A);
- 
+const double PI = 3.14159;
+
+double ler()
+{
+    double r;
+    scanf("%lf", &r);
+    return r;
+}
+double area(double r)
+{
+    return pow(r, 2.0) * PI;
+}
+void mensagem(double A)
+{
+    printf("A=%.4lf\n", A);
+}
+
+int main()
+{
+    double r, A = 0;
+    r = ler();
+    A = area(r);
+    mensagem(A);
+
     return 0;
 }
