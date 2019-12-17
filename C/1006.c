@@ -1,15 +1,37 @@
 #include <stdio.h>
 
+typedef struct
+{
+    double n1, n2, n3;
+} Data;
+
+void upData(Data *data)
+{
+    (*data).n1 *= 2.0;
+    (*data).n2 *= 3.0;
+    (*data).n3 *= 5.0;
+}
+
+void ler(Data *data)
+{
+    scanf("%lf%lf%lf", &(data->n1), &data->n2, &data->n3);
+}
+
+double media(Data data)
+{
+    return (data.n1 + data.n2 + data.n3) / 10.0;
+}
+
 int main()
 {
+    Data aluno;
+    double media_aluno;
 
-    double n1, n2, n3, media;
-    scanf("%lf%lf%lf", &n1, &n2, &n3);
-    n1 = n1 * 2.0;
-    n2 = n2 * 3.0;
-    n3 = n3 * 5.0;
-    media = (n1 + n2 + n3) / 10.0;
-    printf("MEDIA = %.1lf\n", media);
+    ler(&aluno);
+    upData(&aluno);
+
+    media_aluno = media(aluno);
+    printf("MEDIA = %.1lf\n", media_aluno);
 
     return 0;
 }
