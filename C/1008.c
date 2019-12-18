@@ -1,12 +1,23 @@
 #include <stdio.h>
 
-int main()
+typedef struct
 {
     int num, hour;
-    float perHour, salary = 0;
-    scanf("%i%i%f", &num, &hour, &perHour);
-    salary = 1.0 * hour * perHour;
+    float perHour;
+} Employer;
 
-    printf("NUMBER = %i\nSALARY = U$ %.2f\n", num, salary);
+float salary(Employer e)
+{
+    return 1.0 * e.hour * e.perHour;
+}
+
+int main()
+{
+    Employer e;
+    float eSalary = 0;
+    scanf("%i%i%f", &e.num, &e.hour, &e.perHour);
+    eSalary = salary(e);
+
+    printf("NUMBER = %i\nSALARY = U$ %.2f\n", e.num, eSalary);
     return 0;
 }
