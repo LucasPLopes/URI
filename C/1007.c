@@ -1,10 +1,20 @@
 #include <stdio.h>
 
+typedef struct
+{
+    int a, b, c, d;
+} Data;
+
+int DIFERENCA(Data d)
+{
+    return ((d.a * d.b) - (d.c * d.d));
+}
 int main()
 {
-    int a, b, c, d, diffpro;
-    scanf("%i%i%i%i", &a, &b, &c, &d);
-    diffpro = ((a * b) - (c * d));
-    printf("DIFERENCA = %i\n", diffpro);
+    Data d;
+    char *msg = "DIFERENCA = %i\n";
+    scanf("%i%i%i%i", &d.a, &d.b, &d.c, &d.d);
+
+    printf(msg, DIFERENCA(d));
     return 0;
 }
