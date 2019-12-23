@@ -1,17 +1,32 @@
 #include <stdio.h>
 #include <math.h>
+
+typedef struct
+{
+    int hr, mm, ss;
+} Time;
+
+void printTime(Time*);
+
 int main()
 {
-    int hr = 0, mm = 0, ss = 0, x;
+    Time time = {0,0,0};
+    int x;
     scanf("%i", &x);
     if (x > 3600)
-        hr = x / 3600;
-    x = x - (hr * 3600);
+        time.hr = x / 3600;
+    x = x - (time.hr * 3600);
     if (x > 60)
-        mm = x / 60;
-    x = x - (mm * 60);
-    ss = x;
+        time.mm = x / 60;
+    x = x - (time.mm * 60);
+    time.ss = x;
 
-    printf("%i:%i:%i\n", hr, mm, ss);
+    printTime(&time);
+
     return 0;
+}
+void printTime(Time *t)
+{
+    char *output = "%i:%i:%i\n";
+    printf(output, t->hr, t->mm, t->ss);
 }
