@@ -3,12 +3,12 @@ import java.util.Scanner;
 // Template
 public class Main {
     private static class Porcoes {
-        private static int Curupira = 300;
-        private static int Boitata = 1500;
-        private static int Boto = 600;
-        private static int Mapinguari = 1000;
-        private static int Iara = 150;
-        private static int Chica = 225;
+        private final static int Curupira = 300;
+        private final static int Boitata = 1500;
+        private final static int Boto = 600;
+        private final static int Mapinguari = 1000;
+        private final static int Iara = 150;
+        private final static int Chica = 225;
 
     }
 

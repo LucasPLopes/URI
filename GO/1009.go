@@ -9,7 +9,7 @@ func main() {
 	var name string
 	var base, bonus float64
 
-	fmt.Scanln(name)
+	fmt.Scan(&name)
 	fmt.Scan(&base)
 	fmt.Scan(&bonus)
 
