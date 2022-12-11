@@ -1,4 +1,4 @@
-
+package main.ex1010
 fun main(args:Array<String>){
     val (a ,b ,c) = readLine()!!.split(" ")
     val (d, e, f) = readLine()!!.split(" ")

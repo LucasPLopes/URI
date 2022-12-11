@@ -1,3 +1,4 @@
+package main.ex1015
 import java.lang.Math
 
 fun main(args:Array<String>){

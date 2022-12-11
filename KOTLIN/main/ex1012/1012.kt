@@ -1,3 +1,4 @@
+package main.ex1012
 import java.util.Scanner
 import java.lang.Math
 

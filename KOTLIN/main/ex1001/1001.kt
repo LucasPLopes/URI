@@ -1,3 +1,4 @@
+package main.ex1001
 import java.util.*;
 
 fun main(args:Array<String>){

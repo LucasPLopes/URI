@@ -1,3 +1,5 @@
+package main.ex1006
+
 import java.util.Scanner
  class Peso
 {

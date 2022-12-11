@@ -1,3 +1,5 @@
+package main.ex1002
+
 import java.util.*
 
 fun main(args:Array<String>){

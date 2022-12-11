@@ -1,3 +1,4 @@
+package main.ex1005
 import java.util.Scanner
 
 data class Media(val a: Double, val b: Double)
